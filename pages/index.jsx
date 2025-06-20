@@ -1,8 +1,11 @@
-import '../app/globals.css';
-import Home from '../app/page-server';
+import dynamic from 'next/dynamic'
+
+// Charge ton Home (page-server) uniquement côté client
+const HomeClient = dynamic(
+  () => import('../app/page-server'),
+  { ssr: false }
+)
 
 export default function Index() {
-  // Tout reste en client
-  if (typeof window === 'undefined') return null;
-  return <Home />;
+  return <HomeClient />
 }
