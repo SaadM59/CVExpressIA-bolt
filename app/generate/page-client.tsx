@@ -2,8 +2,8 @@
 export const dynamic = 'force-dynamic'
 
 import { useState } from 'react';
-import { CVFormWizard } from '@/components/forms/cv-form-wizard';
-import { PreviewModal } from '@/components/forms/preview-modal';
+// import { CVFormWizard } from '@/components/forms/cv-form-wizard';
+// import { PreviewModal } from '@/components/forms/preview-modal';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Shield, Clock, Award } from 'lucide-react';
@@ -81,11 +81,18 @@ export default function GeneratePage() {
 
         <Card className="shadow-xl border-0 rounded-2xl bg-white/80 backdrop-blur-sm">
           <CardContent className="p-8">
-            <CVFormWizard 
-              onPreview={handlePreview}
-              isGenerating={isGenerating}
-            />
-          </CardContent>
+            <div className="text-center py-8">
+              <h2 className="text-xl font-semibold mb-4">Test de diagnostic</h2>
+              <p>Si vous voyez ce message, la page fonctionne.</p>
+              <button 
+                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+                onClick={() => alert('Bouton fonctionne!')}
+              >
+                Test bouton
+              </button>
+            </div>
+            </CardContent>
+
         </Card>
 
         {/* Trust Indicators */}
@@ -108,14 +115,14 @@ export default function GeneratePage() {
       </div>
 
       {/* Preview Modal */}
-      {showPreview && formData && (
+    {/*  {showPreview && formData && (
         <PreviewModal
           isOpen={showPreview}
           onClose={() => setShowPreview(false)}
           previewContent={previewData}
           formData={formData}
         />
-      )}
+      )} */}
     </div>
   );
 }
