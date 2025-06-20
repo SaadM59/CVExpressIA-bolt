@@ -1,16 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    // Autorise le build même s’il reste des erreurs de typage strictes
-    ignoreBuildErrors: true,
-  },
-  images: { unoptimized: true },
-  experimental: {
-    serverComponentsExternalPackages: ['puppeteer']
-  }
+  // on passe à l’export 100 % statique
+  output: 'export',
+  // on ignore les erreurs TypeScript pour qu’il build toujours
+  typescript: { ignoreBuildErrors: true },
+  eslint: { ignoreDuringBuilds: true },
 };
 
 module.exports = nextConfig;
