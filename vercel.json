@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "app/api/*/route.ts": {
+      "maxDuration": 60
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron-purge",
+      "schedule": "0 * * * *"
+    }
+  ]
+}

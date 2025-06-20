@@ -1,0 +1,110 @@
+{
+  "personalInfo": {
+    "firstName": "Marie",
+    "lastName": "Dupont",
+    "email": "marie.dupont@email.com",
+    "phone": "06 12 34 56 78",
+    "address": "123 rue de la République",
+    "city": "Lyon",
+    "postalCode": "69001",
+    "linkedIn": "https://linkedin.com/in/marie-dupont",
+    "website": ""
+  },
+  "experiences": [
+    {
+      "id": "exp1",
+      "position": "Développeuse Frontend",
+      "company": "TechCorp",
+      "location": "Lyon",
+      "startDate": "2023-01",
+      "endDate": "",
+      "current": true,
+      "description": "Développement d'applications React avec TypeScript. Collaboration étroite avec l'équipe UX/UI pour créer des interfaces utilisateur intuitives. Participation à l'architecture technique et aux choix technologiques.",
+      "achievements": [
+        "Amélioration des performances de 40%",
+        "Migration vers TypeScript",
+        "Mise en place des tests automatisés"
+      ]
+    },
+    {
+      "id": "exp2",
+      "position": "Stagiaire Développement Web",
+      "company": "WebAgency",
+      "location": "Lyon",
+      "startDate": "2022-06",
+      "endDate": "2022-12",
+      "current": false,
+      "description": "Stage de 6 mois en développement web. Participation à la création de sites e-commerce et applications web. Formation aux bonnes pratiques de développement et méthodologies agiles.",
+      "achievements": [
+        "Développement de 3 sites e-commerce",
+        "Formation équipe aux bonnes pratiques",
+        "Participation à 15 projets clients"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "degree": "Master Informatique",
+      "institution": "Université Lyon 1",
+      "location": "Lyon",
+      "startDate": "2021-09",
+      "endDate": "2023-06",
+      "current": false,
+      "description": "Spécialisation développement web et mobile. Projet de fin d'études sur une application React Native. Formation en architecture logicielle et gestion de projet."
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill1",
+      "name": "React",
+      "level": "Avancé",
+      "category": "Technique"
+    },
+    {
+      "id": "skill2",
+      "name": "TypeScript",
+      "level": "Intermédiaire",
+      "category": "Technique"
+    },
+    {
+      "id": "skill3",
+      "name": "Node.js",
+      "level": "Intermédiaire",
+      "category": "Technique"
+    },
+    {
+      "id": "skill4",
+      "name": "Communication",
+      "level": "Avancé",
+      "category": "Soft Skills"
+    },
+    {
+      "id": "skill5",
+      "name": "Gestion de projet",
+      "level": "Intermédiaire",
+      "category": "Soft Skills"
+    }
+  ],
+  "targetJob": {
+    "position": "Développeuse Full-Stack",
+    "company": "Startup Tech",
+    "jobDescription": "Nous recherchons un développeur full-stack passionné pour rejoindre notre équipe dynamique. Vous travaillerez sur des projets innovants utilisant React, Node.js et participerez à l'architecture de nos applications. Une expérience en TypeScript et en méthodologies agiles serait un plus. Le poste offre une grande autonomie et des possibilités d'évolution dans une entreprise en forte croissance.",
+    "requiredSkills": ["React", "Node.js", "TypeScript", "MongoDB", "Git", "Agile"],
+    "industry": "Technologie"
+  },
+  "languages": [
+    {
+      "id": "lang1",
+      "name": "Français",
+      "level": "Natif"
+    },
+    {
+      "id": "lang2",
+      "name": "Anglais",
+      "level": "Professionnel (B2)"
+    }
+  ],
+  "interests": "Veille technologique, contribution open source, randonnée, photographie",
+  "references": "Disponibles sur demande"
+}
