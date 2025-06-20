@@ -1,4 +1,3 @@
-import '../app/globals.css';
 import dynamic from 'next/dynamic'
 
 // Charge le composant Generate en client-only
