@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../app/globals.css';
 import Generate from '../app/generate/page-client';
 
 export default function GeneratePage() {
