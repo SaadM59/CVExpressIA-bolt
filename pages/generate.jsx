@@ -1,7 +1,12 @@
 import '../app/globals.css';
-import Generate from '../app/generate/page-client';
+import dynamic from 'next/dynamic'
+
+// Charge le composant Generate en client-only
+const GenerateClient = dynamic(
+  () => import('../app/generate/page-client'),
+  { ssr: false }
+)
 
 export default function GeneratePage() {
-  if (typeof window === 'undefined') return null;
-  return <Generate />;
+  return <GenerateClient />
 }
