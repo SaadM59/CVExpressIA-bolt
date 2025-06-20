@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../app/globals.css';
 import Home from '../app/page-server';
 
 export default function Index() {
