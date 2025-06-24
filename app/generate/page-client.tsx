@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic'
 
 import { useState } from 'react';
-// import { CVFormWizard } from '@/components/forms/cv-form-wizard';
+import { CVFormSimple } from '@/components/forms/cv-form-simple';
 import { PreviewModal } from '@/components/forms/preview-modal';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -81,7 +81,7 @@ export default function GeneratePage() {
 
         <Card className="shadow-xl border-0 rounded-2xl bg-white/80 backdrop-blur-sm">
         <CardContent className="p-8">
-          <CVFormWizard 
+          <CVFormSimple 
             onPreview={handlePreview}
             isGenerating={isGenerating}
           />
