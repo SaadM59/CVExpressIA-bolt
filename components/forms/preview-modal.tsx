@@ -73,11 +73,9 @@ export function PreviewModal({ isOpen, onClose, previewContent, formData }: Prev
                 <ScrollArea className="h-full p-6">
                   <div className="prose prose-sm max-w-none">
                     <div 
-                      className="text-sm leading-relaxed whitespace-pre-wrap font-mono"
-                      style={{ fontFamily: 'Monaco, Consolas, monospace' }}
-                    >
-                      {previewContent}
-                    </div>
+                      className="cv-preview"
+                      dangerouslySetInnerHTML={{ __html: previewContent }}
+                    />
                   </div>
                 </ScrollArea>
               </CardContent>
