@@ -144,15 +144,28 @@ export default function GeneratePage() {
         </div>
       </div>
 
-      {/* Preview Modal */}
-      {showPreview && formData && (
-        <PreviewModal
-          isOpen={showPreview}
-          onClose={() => setShowPreview(false)}
-          previewContent={previewData}
-          formData={formData}
-        />
-      )}
+{/* Preview Modal Simple */}
+{showPreview && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="p-6 border-b flex justify-between items-center">
+        <h2 className="text-xl font-bold">Aperçu de votre CV</h2>
+        <button 
+          onClick={() => setShowPreview(false)}
+          className="text-gray-500 hover:text-gray-700"
+        >
+          ✕
+        </button>
+      </div>
+      <div className="p-6">
+        <div dangerouslySetInnerHTML={{ __html: previewData }}></div>
+        <div className="mt-6 text-center">
+          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+            Payer et télécharger (9,99€)
+          </button>
+        </div>
+      </div>
     </div>
-  );
-}
+  </div>
+)}
+
